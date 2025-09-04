@@ -1,0 +1,16 @@
+User-agent: *
+Disallow: /images/
+Disallow: /doc/
+Disallow: /couverture-livre-finale-facebook.jpg
+Disallow: /index.php
+
+Allow: /couverture-livre.webp
+Allow: /index.html
+
+
+Sitemap: https://www.vraidieu.com/sitemap.xml
+
+
+
+
+

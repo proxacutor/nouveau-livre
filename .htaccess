@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  RewriteCond %{HTTP_HOST} ^www\.vraidieu\.com$ [NC]
+  RewriteRule ^ https://vraidieu.com%{REQUEST_URI} [L,R=301]
+  RewriteCond %{THE_REQUEST} \s/index\.php[\s?] [NC]
+  RewriteRule ^index\.php$ https://vraidieu.com/ [L,R=301]
+</IfModule>
+AddDefaultCharset UTF-8
+IndexIgnore *
+ServerSignature Off
+ErrorDocument 404 /404.html
