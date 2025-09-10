@@ -33,7 +33,7 @@
         color: #333;
  }
  header {
-        background-color: #000080;
+        background-color: #1E7FCB;
 		color: white;
         text-align: center;
         padding: 20px;
@@ -46,7 +46,7 @@
         max-width: 900px;
         margin: auto;
         padding: 20px;
-        background: white;
+        background: #DFF2FF;
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
  }
  img {
@@ -121,46 +121,73 @@
     padding: 12px 24px;
     border: 3px solid black;
     border-radius: 8px;
-    background: #ff4a4a;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ff4a4a), to(#992727));
-    background: -moz-linear-gradient(top, #ff4a4a, #992727);
-    background: linear-gradient(to bottom, #ff4a4a, #992727);
-    -webkit-box-shadow: #ff5959 0px 0px 40px 0px;
-    -moz-box-shadow: #ff5959 0px 0px 40px 0px;
-    box-shadow: #ff5959 0px 0px 40px 0px;
-    text-shadow: #591717 1px 1px 1px;
+    background: #87CEFA; /* bleu ciel de base */
+    background: -webkit-gradient(linear, left top, left bottom, from(#b0e0ff), to(#87cefa));
+    background: -moz-linear-gradient(top, #b0e0ff, #87cefa);
+    background: linear-gradient(to bottom, #b0e0ff, #87cefa);
+    -webkit-box-shadow: #87cefa 0px 0px 20px 0px;
+    -moz-box-shadow: #87cefa 0px 0px 20px 0px;
+    box-shadow: #87cefa 0px 0px 20px 0px;
+    text-shadow: #ffffff 1px 1px 1px; /* léger contraste clair */
     font: normal normal bold 20px arial;
-    color: #ffffff;
+    color: #000000; /* texte en noir */
     text-decoration: none;
-	margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
 }
+
+
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 24px;
+    border: 3px solid black;
+    border-radius: 8px;
+    background: #87CEFA; /* bleu ciel de base */
+    background: -webkit-gradient(linear, left top, left bottom, from(#b0e0ff), to(#87cefa));
+    background: -moz-linear-gradient(top, #b0e0ff, #87cefa);
+    background: linear-gradient(to bottom, #b0e0ff, #87cefa);
+    -webkit-box-shadow: #87cefa 0px 0px 20px 0px;
+    -moz-box-shadow: #87cefa 0px 0px 20px 0px;
+    box-shadow: #87cefa 0px 0px 20px 0px;
+    text-shadow: #ffffff 1px 1px 1px; /* léger contraste clair */
+    font: normal normal bold 20px arial;
+    color: #000000; /* texte en noir */
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .button:hover,
 .button:focus {
-    background: #ff5959;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ff5959), to(#b62f2f));
-    background: -moz-linear-gradient(top, #ff5959, #b62f2f);
-    background: linear-gradient(to bottom, #ff5959, #b62f2f);
-    color: #ffffff;
+    background: #add8ff; /* bleu clair au survol */
+    background: -webkit-gradient(linear, left top, left bottom, from(#cce9ff), to(#87cefa));
+    background: -moz-linear-gradient(top, #cce9ff, #87cefa);
+    background: linear-gradient(to bottom, #cce9ff, #87cefa);
+    color: #000000; /* texte reste noir */
     text-decoration: none;
 }
+
 .button:active {
-    background: #982727;
-    background: -webkit-gradient(linear, left top, left bottom, from(#982727), to(#982727));
-    background: -moz-linear-gradient(top, #982727, #982727);
-    background: linear-gradient(to bottom, #982727, #982727);
+    background: #5ca9e6; /* bleu un peu plus foncé au clic */
+    background: -webkit-gradient(linear, left top, left bottom, from(#5ca9e6), to(#4682b4));
+    background: -moz-linear-gradient(top, #5ca9e6, #4682b4);
+    background: linear-gradient(to bottom, #5ca9e6, #4682b4);
+    color: #000000;
 }
+
 @media (max-width: 600px) {
     .button {
       display: inline-block;
       transform: scaleX(0.85); /* compresse légèrement le texte */
       transform-origin: center;
-	  font-size: clamp(16px, 2vw, 18px); /* ajuste la taille du texte selon l’écran */
+      font-size: clamp(16px, 2vw, 18px); /* ajuste la taille du texte selon l’écran */
       white-space: nowrap; /* le texte reste sur une seule ligne */
       overflow: hidden; /* évite les débordements */
-    
     }
 }
+
 .center-all {
   max-width: 60rem;      /* ou une largeur fixe */
   margin-inline: auto;   /* centre horizontalement */
