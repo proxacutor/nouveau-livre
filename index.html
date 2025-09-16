@@ -37,10 +37,26 @@
 		color: white;
         text-align: center;
         padding: 20px;
+		margin: 0;        
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(
+        to top,
+        #0f5e9c 0%,   /* eau profonde */
+        #1e81d3 40%,  /* bleu moyen */
+        #4fa9f5 70%,  /* bleu clair */
+        #a8dfff 100%  /* ciel */
+      );
+      overflow: hidden;
  }
  header h1 {
+        margn: 0;
+       font-size: 2em;
+ }
+ header h2 {
         margin: 0;
-        font-size: 2em;
+        font-size: 1em;
+		color: white;
  }
  .container {
         max-width: 900px;
@@ -279,7 +295,7 @@
 
 <header>
     <h1>La Vérité Avant Tout</h1>
-    <p>Un livre d'enquête biblique à prévisualiser gratuitement</p>
+    <h2>Un livre d'enquête biblique à prévisualiser gratuitement</h2>
 </header>
 
 <div class="container">
