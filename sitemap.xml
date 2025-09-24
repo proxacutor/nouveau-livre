@@ -6,13 +6,15 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+  <!-- Page d'accueil -->
   <url>
     <loc>https://www.vraidieu.com/</loc>
     <lastmod>2025-08-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.00</priority>
 
     <image:image>
-      <image:loc>https://www.vraidieu.com/couverture-livre.webp</image:loc>
+      <image:loc>https://www.vraidieu.com/couverture-livre.jpg</image:loc>
       <image:title>Couverture officielle du livre "La Vérité avant tout"</image:title>
       <image:caption>Image de couverture finale du livre "La Vérité avant tout"</image:caption>
     </image:image>
@@ -24,5 +26,12 @@
     </image:image>	
   </url>
 
-</urlset>
+  <!-- Livre en PDF -->
+  <url>
+    <loc>https://www.vraidieu.com/to-read/PDF-Licence-Creative-common-compressed.pdf</loc>
+    <lastmod>2025-02-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
 
+</urlset>
